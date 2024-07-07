@@ -17,3 +17,6 @@ def read_config():
 			print("Running on localhost")
 		else:
 			print("Not running on localhost")
+
+if __name__ == '__main__':
+	read_config()
