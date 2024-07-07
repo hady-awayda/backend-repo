@@ -12,11 +12,11 @@ def read_config():
 	if response.status_code == 200:
 		config = yaml.safe_load(response.content)
 		
-		variable = config.get('run_localhost')
+		variable = config.get('is_anagram')
 		if variable is True:
-			print("Running on localhost")
+			print("It is indeed an anagram!")
 		else:
-			print("Not running on localhost")
+			print("Not actually an anagram...")
 
 if __name__ == '__main__':
 	read_config()
